@@ -1,0 +1,36 @@
+.proposal-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 60px 0 50px;
+
+  &__item {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 30px;
+
+    &_big {
+      @extend .proposal-block__item;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .proposal-block {
+    margin: 250px 0 220px;
+
+    &__item {
+      width: auto;
+      margin-left: 50px;
+      margin-bottom: 0;
+      flex: 1;
+
+      &:nth-child(odd) {
+        margin-left: 0;
+      }
+
+      &_big {
+        flex: 0 0 59.84%;
+      }
+    }
+  }
+}

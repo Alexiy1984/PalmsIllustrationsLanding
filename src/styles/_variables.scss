@@ -1,0 +1,77 @@
+$colors: (
+  brand-dark-blue: rgba(40, 48, 113, 1),
+  brand-dark-blue-hover: rgba(53, 64, 151, 1),
+  brand-dark-blue-active: rgba(27, 32, 75, 1),
+  brand-green: rgba(127, 202, 207, 1),
+  brand-green-hover: rgba(140, 207, 212, 1),
+  brand-green-active: rgba(110, 195, 201, 1),
+  brand-yellow: rgba(247, 211, 114, 1),
+  brand-yellow-hover: rgba(248, 219, 139, 1),
+  brand-yellow-active: rgba(246, 204, 91, 1),
+);
+
+$breakpoints: (
+  small: 768px,
+  medium: 992px,
+  large: 1200px,
+);
+
+$title-font-sizes: (
+  null: (32px, 32px, normal),
+  small: (42px, 42px, -0.5px),
+  medium: (68px, 68px, -1px),
+);
+
+$hero-block-subtitle-font-sizes: (
+  null: (18px, 20px, normal),
+  small: (20px, 24px, normal),
+  medium: (21px, 32px, normal),
+);
+
+$card__subtitle-font-sizes : (
+  null: (16px, 18px, normal),
+  small: (17px, 24px, normal),
+  medium: (18px, 24px, -0.18px),
+);
+
+$card-list-font-sizes: (
+  null: (18px, 20px, normal),
+  small: (20px, 24px, normal),
+  medium: (21px, 24px, normal),
+);
+
+@mixin font-size($fs-map, $fs-breakpoints: $breakpoints) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      @include make-font-size($fs-font-size);
+    }
+
+    @else {
+      @if map-has-key($fs-breakpoints, $fs-breakpoint) {
+        $fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+      }
+
+      @media screen and (min-width: $fs-breakpoint) {
+        @include make-font-size($fs-font-size);
+      }
+    }
+  }
+}
+
+@mixin make-font-size($fs-font-size) {
+  @if type-of($fs-font-size) == "list" {
+    font-size: nth($fs-font-size, 1);
+
+    @if (length($fs-font-size) > 1) {
+      line-height: nth($fs-font-size, 2);
+    }
+
+    @if (length($fs-font-size) > 2) {
+      letter-spacing: nth($fs-font-size, 3);
+    }
+  }
+
+  @else {
+    font-size: $fs-font-size;
+  }
+}

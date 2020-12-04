@@ -1,0 +1,104 @@
+.card {
+  position: relative;
+  padding: 23px 30px 35px;
+  border-radius: 20px;
+  background-color: #f7f7f9;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+
+  &__title {
+    @include font-size($title-font-sizes);
+
+    margin-bottom: 25px;
+    font-family: GoshaSans, sans-serif;
+    font-weight: 700;
+    z-index: 11;
+  }
+
+  &__subtitle {
+    @include font-size($card__subtitle-font-sizes);
+
+    margin-bottom: 40px;
+    z-index: 11;
+  }
+
+  &__list {
+    list-style: none;
+    margin-bottom: 59px;
+    z-index: 11;
+
+    li {
+      @include font-size($card-list-font-sizes);
+
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 16px;
+
+      &::before {
+        display: inline-block;
+        margin-right: 16px;
+        content: '';
+        min-width: 25px;
+        min-height: 25px;
+        background-color: map-get($colors, 'brand-green');
+        border-radius: 25px;
+        background-image: url(../../public/images/check.svg);
+        background-size: 70% 70%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &__bottom {
+    margin-top: auto;
+    z-index: 11;
+  }
+
+  &__out-item {
+    margin-top: -50px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &_invert {
+    @extend .card;
+
+    background-color: map-get($colors, 'brand-dark-blue');
+    color: #fff;
+
+    .card__list {
+      li {
+        &::before {
+          background-color: map-get($colors, 'brand-yellow');
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .card {
+    padding: 35px 40px 50px;
+
+    &__out-item {
+      margin-top: 0;
+      position: absolute;
+      right: -10%;
+      bottom: 0;
+      z-index: 10;
+      width: 55%;
+      height: auto;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

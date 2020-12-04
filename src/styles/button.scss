@@ -1,0 +1,66 @@
+.button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 24px 35px 25px;
+  font-size: 21px;
+  line-height: 21px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 35px;
+  transform: translateY(0);
+  transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &_green {
+    @extend .button;
+
+    background-color: map-get($colors, 'brand-green');
+
+    &:hover {
+      background-color: map-get($colors, 'brand-green-hover');
+    }
+
+    &:active {
+      background-color: map-get($colors, 'brand-green-active');
+    }
+  }
+
+  &_blue {
+    @extend .button;
+
+    background-color: map-get($colors, 'brand-dark-blue');
+
+    &:hover {
+      background-color: map-get($colors, 'brand-dark-blue-hover');
+    }
+
+    &:active {
+      background-color: map-get($colors, 'brand-dark-blue-active');
+    }
+  }
+
+  &_yellow {
+    @extend .button;
+
+    background-color: map-get($colors, 'brand-yellow');
+
+    &:hover {
+      background-color: map-get($colors, 'brand-yellow-hover');
+    }
+
+    &:active {
+      background-color: map-get($colors, 'brand-yellow-active');
+    }
+  }
+
+  &_wide {
+    @extend .button;
+
+    width: 100%;
+    text-align: center;
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
+  }
+}

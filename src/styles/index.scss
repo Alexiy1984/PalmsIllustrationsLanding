@@ -1,6 +1,85 @@
-$body-color: slateblue;
+@import 'variables';
+@import 'fontfaces';
+@import 'hero-block';
+@import 'full-preview-block';
+@import 'proposal-block';
+@import 'card';
+@import 'button';
+@import 'footer';
 
 body {
-  color: $body-color;
-  font-family: sans-serif;
+  color: map-get($colors, 'brand-dark-blue');
+  margin: 0;
+  padding: 0;
+  font-family: EuclidCircular, sans-serif;
+  font-weight: 400;
+
+  & * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.title {
+  @include font-size($title-font-sizes);
+
+  font-family: GoshaSans, sans-serif;
+}
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1520px;
+  padding: 0 30px;
+  margin: auto;
+
+  &_narrow {
+    @extend .container;
+
+    max-width: 1380px;
+  }
+}
+
+.navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px 0;
+  flex-wrap: wrap;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    margin: 10px 0;
+  }
+
+  &__container {
+    position: sticky;
+    top: 0;
+    background-color: rgba(#fff, 0.5);
+    z-index: 100;
+  }
+}
+
+.text {
+  &_center {
+    text-align: center;
+  }
+
+  &_left {
+    text-align: left;
+  }
+
+  &_right {
+    text-align: right;
+  }
 }
