@@ -1,14 +1,14 @@
 .button {
   display: inline-block;
   text-decoration: none;
-  padding: 24px 35px 25px;
-  font-size: 21px;
-  line-height: 21px;
+  padding: 20px 30px 20px;
+  font-size: 18px;
+  line-height: 18px;
   color: #fff;
   font-weight: 600;
   border-radius: 35px;
   transform: translateY(0);
-  transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
   &_green {
     @extend .button;
@@ -62,5 +62,13 @@
   &:hover {
     cursor: pointer;
     transform: translateY(-3px);
+  }
+}
+
+@media (min-width: 375px) {
+  .button {
+    font-size: 21px;
+    line-height: 21px;
+    padding: 24px 35px 25px;
   }
 }

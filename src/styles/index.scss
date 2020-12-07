@@ -1,11 +1,16 @@
 @import 'variables';
 @import 'fontfaces';
 @import 'hero-block';
+@import 'grid-block';
 @import 'full-preview-block';
 @import 'proposal-block';
 @import 'card';
 @import 'button';
 @import 'footer';
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   color: map-get($colors, 'brand-dark-blue');
@@ -60,13 +65,22 @@ body {
     font-size: 18px;
     line-height: 100%;
     margin: 10px 0;
+    // mix-blend-mode: exclusion;
   }
 
   &__container {
     position: sticky;
     top: 0;
-    background-color: rgba(#fff, 0.5);
+    // background-color: rgba(#fff, 1);
     z-index: 100;
+    // mix-blend-mode: color-dodge;
+    mix-blend-mode: color-burn;
+    // mix-blend-mode: hard-light;
+    // mix-blend-mode: soft-light;
+    // mix-blend-mode: difference;
+    // mix-blend-mode: exclusion;
+    // mix-blend-mode: color;
+    // mix-blend-mode: luminosity;
   }
 }
 
