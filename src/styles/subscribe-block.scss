@@ -1,0 +1,120 @@
+.subscribe-block {
+  margin-bottom: 120px;
+
+  .button {
+    border: none;
+    outline: none;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .title {
+    max-width: 886px;
+    margin: 0 auto 60px;
+    text-align: center;
+  }
+
+  form {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 775px;
+    margin: auto;
+    align-items: stretch;
+    padding-bottom: 20px;
+    border-bottom: none;
+    flex-direction: column;
+
+    div[for='mce-EMAIL'] {
+      position: absolute;
+      width: 100%;
+      top: calc(100% + 10px);
+      left: 0;
+      border-radius: 10px;
+
+      &.mce_inline_error {
+        background-color: #de5c56 !important;
+      }
+
+      &.mce_inline_success {
+        background-color: map-get($colors, 'brand-green-active');
+      }
+    }
+
+    #mce-responses {
+      position: absolute;
+      left: 0;
+      top: calc(100% + 10px);
+      width: 100%;
+      text-align: center;
+      font-size: 18px;
+      line-height: 18px;
+
+      #mce-error-response {
+        color: #de5c56;
+      }
+    }
+
+    .mc-field-group {
+      flex: 1;
+      height: 100%;
+      border: none;
+
+      input {
+        @include font-size($subscrire-input-font-sizes);
+
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        padding: 22px 35px 24px;
+        border-bottom: 1px solid map-get($colors, 'brand-green');
+
+        &::placeholder {
+          color: map-get($colors, 'brand-dark-blue');
+          opacity: 0.4;
+          transition: opacity 0.15s ease-in;
+        }
+
+        &:focus {
+          &::placeholder {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .subscribe-block {
+    margin-bottom: 150px;
+
+    .title {
+      margin: 0 auto 77px;
+    }
+
+    form {
+      flex-direction: row;
+      border-bottom: 1px solid map-get($colors, 'brand-green');
+
+      .mc-field-group {
+        input {
+          border-bottom: none;
+        }
+      }
+    }
+
+    .button {
+      margin-left: 30px;
+      margin-top: 0;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .subscribe-block {
+    margin-bottom: 200px;
+  }
+}

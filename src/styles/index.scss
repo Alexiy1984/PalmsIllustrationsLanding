@@ -6,7 +6,9 @@
 @import 'proposal-block';
 @import 'card';
 @import 'button';
+@import 'subscribe-block';
 @import 'footer';
+@import "~animate.css/animate.css";
 
 html {
   scroll-behavior: smooth;
@@ -30,6 +32,11 @@ body {
   @include font-size($title-font-sizes);
 
   font-family: GoshaSans, sans-serif;
+  font-weight: 700;
+}
+
+.no-mobile {
+  display: none;
 }
 
 .wrapper {
@@ -95,5 +102,11 @@ body {
 
   &_right {
     text-align: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .no-mobile {
+    display: initial;
   }
 }

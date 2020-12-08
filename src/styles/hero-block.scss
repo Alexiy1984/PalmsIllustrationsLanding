@@ -1,11 +1,14 @@
 .hero-block {
   text-align: center;
   position: relative;
-  min-height: calc(100vh - 88px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  &__content {
+    margin: 100px 0 100%;
+  }
 
   h1 {
     @include font-size($title-font-sizes);
@@ -22,6 +25,7 @@
 
     max-width: 615px;
     margin: 0 auto 40px;
+    font-weight: 400;
   }
 
   p {
@@ -32,28 +36,53 @@
 
   &__image {
     position: absolute;
-    top: 65%;
-    transform: translate(0, -50%);
+    top: 95%;
+    transform: translate(0, -100%);
     z-index: -1;
+    width: 50%;
+    height: auto;
 
     &_left {
       @extend .hero-block__image;
 
-      left: -170px;
+      left: 0;
     }
 
     &_right {
       @extend .hero-block__image;
 
-      right: -170px;
+      right: 0;
+    }
+  }
+}
+
+@media (min-width: 376px) {
+  .hero-block {
+    &__content {
+      margin: 100px 0 90%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-block {
+    &__content {
+      margin: 100px 0 70%;
     }
   }
 }
 
 @media (min-width: 1100px) {
   .hero-block {
+    min-height: calc(100vh - 78px);
+
+    &__content {
+      margin: 0;
+    }
+
     &__image {
-      top: 50%;
+      top: 65%;
+      width: auto;
 
       &_left {
         left: -12.5%;
@@ -69,6 +98,8 @@
 @media (min-width: 1200px) {
   .hero-block {
     &__image {
+      top: 65%;
+
       &_left {
         left: -10%;
       }
@@ -83,12 +114,14 @@
 @media (min-width: 1500px) {
   .hero-block {
     &__image {
+      top: 70%;
+
       &_left {
-        left: -10px;
+        left: -3.5%;
       }
 
       &_right {
-        right: -10px;
+        right: -3.5%;
       }
     }
   }

@@ -57,6 +57,9 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.11.5",
-    "core-js": "^3.6.5"
+    "animate.css": "^4.1.1",
+    "core-js": "^3.6.5",
+    "vanilla-lazyload": "^17.3.0",
+    "wow.js": "^1.2.2"
   }
 }

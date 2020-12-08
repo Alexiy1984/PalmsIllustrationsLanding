@@ -4,23 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Palms Illustrations</title>
-  <link rel="preload" href="../../public/fonts/EuclidCircularA-Regular-WebXL.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="../../public/fonts/EuclidCircularA-Regular-WebXL.woff2" as="font" type="font/woff2" crossorigin=>
-  <link rel="preload" href="../../public/fonts/EuclidCircularA-Medium-WebXL.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="../../public/fonts/EuclidCircularA-Medium-WebXL.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="../../public/fonts/EuclidCircularA-Semibold-WebXL.woff" as="font" type="font/woff" crossorigin>
-  <link rel="preload" href="../../public/fonts/EuclidCircularA-Semibold-WebXL.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="../../public/fonts/GoshaSans-Ultralight.otf" as="font" type="font/otf" crossorigin>
-  <link rel="preload" href="../../public/fonts/GoshaSans-Regular.otf" as="font" type="font/otf" crossorigin>
-  <link rel="preload" href="../../public/fonts/GoshaSans-Bold.otf" as="font" type="font/otf" crossorigin>
-  <link rel="preload" href="../../public/fonts/GoshaSans-Ultrabold.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="public/fonts/EuclidCircularA-Regular-WebXL.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="public/fonts/EuclidCircularA-Regular-WebXL.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="public/fonts/EuclidCircularA-Medium-WebXL.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="public/fonts/EuclidCircularA-Medium-WebXL.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="public/fonts/EuclidCircularA-Semibold-WebXL.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="public/fonts/EuclidCircularA-Semibold-WebXL.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="public/fonts/GoshaSans-Ultralight.otf" as="font" type="font/otf" crossorigin="anonymous">
+  <link rel="preload" href="public/fonts/GoshaSans-Regular.otf" as="font" type="font/otf" crossorigin="anonymous">
+  <link rel="preload" href="public/fonts/GoshaSans-Bold.otf" as="font" type="font/otf" crossorigin="anonymous">
+  <link rel="preload" href="public/fonts/GoshaSans-Ultrabold.otf" as="font" type="font/otf" crossorigin="anonymous">
 </head>
 <body>
+  <style>
+    .wow {
+      visibility: hidden;
+    }
+  </style>
   <div class="container navigation__container">
     <div class="navigation">
-      <a href="#">palms</a>
-      <a href="#proposal-block">download for free ↓</a>
-      <a href="#">Craftwork →</a>
+      <a class="no-mobile">palms</a>
+      <a href="#proposal-block">download <span class="no-mobile">for free</span> ↓</a>
+      <a href="https://craftwork.design/">craftwork →</a>
     </div>
   </div>
   <div class="wrapper">
@@ -28,325 +33,332 @@
       <div class="hero-block__content">
         <h1>Large set of palms to describe your idea</h1>
         <h2>Want to sound clear but beautiful? Choose any of 43 signs to share your thoughts. Palms perfectly fit any design.</h2>
-        <a class="button_green">download for free ↓</a>
+        <a href="#proposal-block" class="button_green">download for free ↓</a>
         <p>43 Illustrations in .svg / .png / .ai</p>
       </div>
-      <img class="hero-block__image_left" src="../public/images/Group4.svg" alt="hand">
-      <img class="hero-block__image_right" src="../public/images/Group3.svg" alt="hand">
+      <img class="hero-block__image_left wow animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.1s" src="public/images/Group4.svg" alt="hand">
+      <img class="hero-block__image_right wow animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.1s" src="public/images/Group3.svg" alt="hand">
     </div>
     <div class="container_narrow">
       <div class="grid-block">
         <div class="grid-block__item item_1">
-          <img src="../public/images/grid/Group1.svg" alt="img-1">
+          <picture>
+            <source data-srcset="public/images/grid/Group1.png 1x, public/images/grid/Group1@2x.png 2x" />
+            <img class="lazy" data-src="public/images/grid/Group1.png" alt="img-1">
+          </picture>
         </div>
         <div class="grid-block__item item_2">
-          <img src="../public/images/grid/Group2.svg" alt="img-2">
+          <picture>
+            <source data-srcset="public/images/grid/Group2.png 1x, public/images/grid/Group2@2x.png 2x" />
+            <img class="lazy" data-src="public/images/grid/Group2.png" alt="img-2">
+          </picture>
         </div>
         <div class="grid-block__item item_3">
-          <img src="../public/images/grid/Group3.svg" alt="img-3">
+          <picture>
+            <source data-srcset="public/images/grid/Group3.png 1x, public/images/grid/Group3@2x.png 2x" />
+            <img class="lazy" data-src="public/images/grid/Group3.png" alt="img-3">
+          </picture>
         </div>
         <div class="grid-block__item item_4">
-          <img src="../public/images/grid/Group4.svg" alt="img-4">
+          <picture>
+            <source data-srcset="public/images/grid/Group4.png 1x, public/images/grid/Group4@2x.png 2x" />
+            <img class="lazy" data-src="public/images/grid/Group4.png" alt="img-4">
+          </picture>
         </div>
         <div class="grid-block__item item_5">
-          <div class="inner">
-            <p>43 palms illustrations,</p>
-            <div class="inner__container">
-              <div class="inner__img">
-                <img src="../public/images/grid/png.svg" alt="png">
-                <p>.png</p>
-              </div>
-              <div class="inner__img">
-                <img src="../public/images/grid/svg.svg" alt="svg">
-                <p>.svg</p>
-              </div>
-              <div class="inner__img">
-                <img src="../public/images/grid/ai.svg" alt="ai">
-                <p>.ai</p>
-              </div>
-            </div>
-            <p>formats</p>
-          </div>
+          <picture>
+            <source data-srcset="public/images/grid/Group5.png 1x, public/images/grid/Group5@2x.png 2x" />
+            <img class="lazy" data-src="public/images/grid/Group5.png" alt="img-5">
+          </picture>
         </div>
         <div class="grid-block__item item_6">
           <picture>
-            <source srcset="../public/images/grid/Group6@2x.png 2x, ../public/images/grid/Group6.png 1x" />
-            <img src="../public/images/grid/Group6.png" alt="img-6">
+            <source data-srcset="public/images/grid/Group6@2x.png 2x, public/images/grid/Group6.png 1x" />
+            <img class="lazy" data-src="public/images/grid/Group6.png" alt="img-6">
           </picture>
         </div>
         <div class="grid-block__item item_7">
-          <img src="../public/images/grid/Group7.svg" alt="img-7">
+          <picture>
+            <source data-srcset="public/images/grid/Group7@2x.png 2x, public/images/grid/Group7.png 1x" />
+            <img class="lazy" data-src="public/images/grid/Group7.png" alt="img-7">
+          </picture>
         </div>
         <div class="grid-block__item item_8">
-          <img src="../public/images/grid/Text.svg" alt="works with any design">
+          <img src="public/images/grid/Text.svg" alt="works with any design">
         </div>
         <div class="grid-block__item item_9">
-          <img src="../public/images/grid/Group9.svg" alt="img-9">
+          <picture>
+            <source data-srcset="public/images/grid/Group9@2x.png 2x, public/images/grid/Group9.png 1x" />
+            <img class="lazy" data-src="public/images/grid/Group9.png" alt="img-9">
+          </picture>
         </div>
         <div class="grid-block__item item_10">
-          <img src="../public/images/grid/Group10.svg" alt="img-10">
+          <picture>
+            <source data-srcset="public/images/grid/Group10@2x.png 2x, public/images/grid/Group10.png 1x" />
+            <img class="lazy" data-src="public/images/grid/Group10.png" alt="img-10">
+          </picture>
         </div>
       </div>
     </div>
     <div class="container">
-      <h2 class="title text_center">Full preview</h2>
+      <h2 class="title text_center wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">Full preview</h2>
       <div class="full-preview-block">
-        <div class="full-preview-block__item">
+        <div class="full-preview-block__item  wow animate__fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base.png 2x, ../public/images/full_preview/big/Base.png 1x" />
-            <img src="../public/images/full_preview/normal/Base.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base.png 1x, public/images/full_preview/big/Base.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base.png" alt="Base">
+          </picture>
+        </div>
+        <div class="full-preview-block__item  wow animate__fadeIn" data-wow-duration="2s" data-wow-delay="0.7s">
+          <picture>
+            <source data-srcset="public/images/full_preview/normal/Base-1.png 1x, public/images/full_preview/big/Base-1.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-1.png" alt="Base">
+          </picture>
+        </div>
+        <div class="full-preview-block__item wow animate__fadeIn" data-wow-duration="2s" data-wow-delay="0.4s">
+          <picture>
+            <source data-srcset="public/images/full_preview/normal/Base-2.png 1x, public/images/full_preview/big/Base-2.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-2.png" alt="Base">
+          </picture>
+        </div>
+        <div class="full-preview-block__item wow animate__fadeIn" data-wow-duration="2s" data-wow-delay="0.9s">
+          <picture>
+            <source data-srcset="public/images/full_preview/normal/Base-3.png 1x, public/images/full_preview/big/Base-3.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-3.png" alt="Base">
+          </picture>
+        </div>
+        <div class="full-preview-block__item wow animate__fadeIn" data-wow-duration="2s" data-wow-delay="0.6s">
+          <picture>
+            <source data-srcset="public/images/full_preview/normal/Base-4.png 1x, public/images/full_preview/big/Base-4.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-4.png" alt="Base">
+          </picture>
+        </div>
+        <div class="full-preview-block__item wow animate__fadeIn" data-wow-duration="2s" data-wow-delay="0.3s">
+          <picture>
+            <source data-srcset="public/images/full_preview/normal/Base-5.png 1x, public/images/full_preview/big/Base-5.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-5.png" alt="Base">
+          </picture>
+        </div>
+        <div class="full-preview-block__item wow animate__fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
+          <picture>
+            <source data-srcset="public/images/full_preview/normal/Base-6.png 1x, public/images/full_preview/big/Base-6.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-6.png" alt="Base">
+          </picture>
+        </div>
+        <div class="full-preview-block__item wow animate__fadeIn" data-wow-duration="2s" data-wow-delay="0.8s">
+          <picture>
+            <source data-srcset="public/images/full_preview/normal/Base-7.png 1x, public/images/full_preview/big/Base-7.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-7.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-1.png 2x, ../public/images/full_preview/big/Base-1.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-1.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-8.png 1x, public/images/full_preview/big/Base-8.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-8.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-2.png 2x, ../public/images/full_preview/big/Base-2.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-2.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-9.png 1x, public/images/full_preview/big/Base-9.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-9.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-3.png 2x, ../public/images/full_preview/big/Base-3.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-3.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-10.png 1x, public/images/full_preview/big/Base-10.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-10.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-4.png 2x, ../public/images/full_preview/big/Base-4.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-4.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-11.png 1x, public/images/full_preview/big/Base-11.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-11.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-5.png 2x, ../public/images/full_preview/big/Base-5.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-5.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-12.png 1x, public/images/full_preview/big/Base-12.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-12.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-6.png 2x, ../public/images/full_preview/big/Base-6.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-6.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-13.png 1x, public/images/full_preview/big/Base-13.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-13.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-7.png 2x, ../public/images/full_preview/big/Base-7.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-7.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-14.png 1x, public/images/full_preview/big/Base-14.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-14.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-8.png 2x, ../public/images/full_preview/big/Base-8.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-8.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-15.png 1x, public/images/full_preview/big/Base-15.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-15.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-9.png 2x, ../public/images/full_preview/big/Base-9.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-9.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-16.png 1x, public/images/full_preview/big/Base-16.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-16.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-10.png 2x, ../public/images/full_preview/big/Base-10.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-10.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-17.png 1x, public/images/full_preview/big/Base-17.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-17.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-11.png 2x, ../public/images/full_preview/big/Base-11.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-11.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-18.png 1x, public/images/full_preview/big/Base-18.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-18.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-12.png 2x, ../public/images/full_preview/big/Base-12.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-12.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-19.png 1x, public/images/full_preview/big/Base-19.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-19.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-13.png 2x, ../public/images/full_preview/big/Base-13.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-13.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-20.png 1x, public/images/full_preview/big/Base-20.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-20.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-14.png 2x, ../public/images/full_preview/big/Base-14.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-14.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-21.png 1x, public/images/full_preview/big/Base-21.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-21.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-15.png 2x, ../public/images/full_preview/big/Base-15.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-15.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-22.png 1x, public/images/full_preview/big/Base-22.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-22.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-16.png 2x, ../public/images/full_preview/big/Base-16.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-16.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-23.png 1x, public/images/full_preview/big/Base-23.png 2x" />
+            <img class="lazy" data-data-src="public/images/full_preview/normal/Base-23.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-17.png 2x, ../public/images/full_preview/big/Base-17.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-17.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-24.png 1x, public/images/full_preview/big/Base-24.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-24.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-18.png 2x, ../public/images/full_preview/big/Base-18.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-18.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-25.png 1x, public/images/full_preview/big/Base-25.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-25.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-19.png 2x, ../public/images/full_preview/big/Base-19.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-19.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-26.png 1x, public/images/full_preview/big/Base-26.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-26.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-20.png 2x, ../public/images/full_preview/big/Base-20.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-20.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-27.png 1x, public/images/full_preview/big/Base-27.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-27.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-21.png 2x, ../public/images/full_preview/big/Base-21.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-21.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-28.png 1x, public/images/full_preview/big/Base-28.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-28.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-22.png 2x, ../public/images/full_preview/big/Base-22.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-22.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-29.png 1x, public/images/full_preview/big/Base-29.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-29.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-23.png 2x, ../public/images/full_preview/big/Base-23.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-23.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-30.png 1x, public/images/full_preview/big/Base-30.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-30.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-24.png 2x, ../public/images/full_preview/big/Base-24.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-24.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-31.png 1x, public/images/full_preview/big/Base-31.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-31.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-25.png 2x, ../public/images/full_preview/big/Base-25.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-25.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-32.png 1x, public/images/full_preview/big/Base-32.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-32.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-26.png 2x, ../public/images/full_preview/big/Base-26.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-26.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-33.png 1x, public/images/full_preview/big/Base-33.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-33.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-27.png 2x, ../public/images/full_preview/big/Base-27.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-27.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-34.png 1x, public/images/full_preview/big/Base-34.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-34.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-28.png 2x, ../public/images/full_preview/big/Base-28.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-28.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-35.png 1x, public/images/full_preview/big/Base-35.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-35.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-29.png 2x, ../public/images/full_preview/big/Base-29.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-29.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-36.png 1x, public/images/full_preview/big/Base-36.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-36.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-30.png 2x, ../public/images/full_preview/big/Base-30.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-30.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-37.png 1x, public/images/full_preview/big/Base-37.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-37.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-31.png 2x, ../public/images/full_preview/big/Base-31.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-31.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-38.png 1x, public/images/full_preview/big/Base-38.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-38.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-32.png 2x, ../public/images/full_preview/big/Base-32.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-32.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-39.png 1x, public/images/full_preview/big/Base-39.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-39.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-33.png 2x, ../public/images/full_preview/big/Base-33.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-33.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-40.png 1x, public/images/full_preview/big/Base-40.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-40.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-34.png 2x, ../public/images/full_preview/big/Base-34.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-34.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-41.png 1x, public/images/full_preview/big/Base-41.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-41.png" alt="Base">
           </picture>
         </div>
         <div class="full-preview-block__item">
           <picture>
-            <source srcset="../public/images/full_preview/normal/Base-35.png 2x, ../public/images/full_preview/big/Base-35.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-35.png" alt="Base">
-          </picture>
-        </div>
-        <div class="full-preview-block__item">
-          <picture>
-            <source srcset="../public/images/full_preview/normal/Base-36.png 2x, ../public/images/full_preview/big/Base-36.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-36.png" alt="Base">
-          </picture>
-        </div>
-        <div class="full-preview-block__item">
-          <picture>
-            <source srcset="../public/images/full_preview/normal/Base-37.png 2x, ../public/images/full_preview/big/Base-37.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-37.png" alt="Base">
-          </picture>
-        </div>
-        <div class="full-preview-block__item">
-          <picture>
-            <source srcset="../public/images/full_preview/normal/Base-38.png 2x, ../public/images/full_preview/big/Base-38.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-38.png" alt="Base">
-          </picture>
-        </div>
-        <div class="full-preview-block__item">
-          <picture>
-            <source srcset="../public/images/full_preview/normal/Base-39.png 2x, ../public/images/full_preview/big/Base-39.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-39.png" alt="Base">
-          </picture>
-        </div>
-        <div class="full-preview-block__item">
-          <picture>
-            <source srcset="../public/images/full_preview/normal/Base-40.png 2x, ../public/images/full_preview/big/Base-40.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-40.png" alt="Base">
-          </picture>
-        </div>
-        <div class="full-preview-block__item">
-          <picture>
-            <source srcset="../public/images/full_preview/normal/Base-41.png 2x, ../public/images/full_preview/big/Base-41.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-41.png" alt="Base">
-          </picture>
-        </div>
-        <div class="full-preview-block__item">
-          <picture>
-            <source srcset="../public/images/full_preview/normal/Base-42.png 2x, ../public/images/full_preview/big/Base-42.png 1x" />
-            <img src="../public/images/full_preview/normal/Base-42.png" alt="Base">
+            <source data-srcset="public/images/full_preview/normal/Base-42.png 1x, public/images/full_preview/big/Base-42.png 2x" />
+            <img class="lazy" data-src="public/images/full_preview/normal/Base-42.png" alt="Base">
           </picture>
         </div>
       </div>
@@ -356,17 +368,25 @@
         <div class="proposal-block__item_big">
           <div class="card">
             <div class="card__title">Palms illustrations</div>
-            <div class="card__subtitle">Colorful and stylish way to show a message to your audience. Big set of palms that work with any design.</div>
+            <div class="card__subtitle_short">Colorful and stylish way to show a message to your audience. Big set of palms that work with any design.</div>
             <ul class="card__list">
               <li>43 colorful illustrations</li>
               <li>.png / .svg / .ai formats</li>
               <li>Personal & Commercial license</li>
-              <li>Personal & Commercial license</li>
+              <li>Compatible with Figma & Sketch</li>
             </ul>
             <div class="card__out-item">
-              <img src="../public/images/joystick.svg" alt="joystick">
+              <!-- <img class="lazy" data-src="public/images/joystick.svg" alt="joystick"> -->
+              <picture>
+                <source data-srcset="public/images/joystick.png 1x, public/images/joystick@2x.png 2x" />
+                <img class="lazy" data-src="public/images/joystick.png" alt="joystick">
+              </picture>
             </div>
-            <a class="button_blue card__bottom">download for free ↓</a>
+            <div class="button-combiner card__bottom">
+              <a class="button_blue button_left">download png for free ↓</a>
+              <div class="button-combiner__delimiter"></div>
+              <a class="button_blue_secondary button_right">purchase vector for $28 →</a>
+            </div>
           </div>
         </div>
         <div class="proposal-block__item">
@@ -383,12 +403,35 @@
         </div>
       </div>
     </div>
+    <div class="container_narrow">
+      <div class="subscribe-block">
+        <div class="title">
+          Sign up craftwork digest and get new UI releases every tuesday
+        </div>
+        <div id="mc_embed_signup">
+          <form action="https://design.us11.list-manage.com/subscribe/post?u=1f4eca0391ca7ebd97f795949&amp;id=69e024e383" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="novalidate">
+            <div class="mc-field-group form-group position-relative">
+              <input type="email" value="" name="EMAIL" class="email form-control valid" id="mce-EMAIL" aria-invalid="false" placeholder="Enter your email">
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none;"></div>
+                <div class="response" id="mce-success-response" style="display:none;"></div>
+              </div>
+            </div>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name="b_1f4eca0391ca7ebd97f795949_69e024e383" tabindex="-1" value="">
+            </div>
+            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button_green">
+          </form>
+          <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+        </div>  
+      </div>
+    </div>
     <div class="footer">
       <div class="container">
         <div class="footer__top">
           <div class="footer__info">
             <a href="https://craftwork.design/">
-              <img src="../public/images/Logo.svg" alt="Palms">
+              <img src="public/images/Logo.svg" alt="Palms">
             </a>
             High-quality digital resources which make your design workflow faster and easier
           </div>

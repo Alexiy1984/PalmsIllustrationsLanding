@@ -40,6 +40,12 @@ $card-list-font-sizes: (
   medium: (21px, 24px, normal),
 );
 
+$subscrire-input-font-sizes: (
+  null: (18px, 18px, normal),
+  small: (20px, 20px, normal),
+  medium: (21px, 21px, normal),
+);
+
 @mixin font-size($fs-map, $fs-breakpoints: $breakpoints) {
   @each $fs-breakpoint, $fs-font-size in $fs-map {
     @if $fs-breakpoint == null {
