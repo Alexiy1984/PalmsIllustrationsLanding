@@ -74,7 +74,8 @@
 
 @media (min-width: 1100px) {
   .hero-block {
-    min-height: calc(100vh - 78px);
+    height: calc(100vh - 78px);
+    min-height: 700px;
 
     &__content {
       margin: 0;

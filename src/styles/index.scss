@@ -20,6 +20,7 @@ body {
   padding: 0;
   font-family: EuclidCircular, sans-serif;
   font-weight: 400;
+  isolation: isolate;
 
   & * {
     box-sizing: border-box;
@@ -66,28 +67,41 @@ body {
 
   a {
     text-decoration: none;
-    color: inherit;
+    color: map-get($colors, 'brand-dark-blue');
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 100%;
     margin: 10px 0;
-    // mix-blend-mode: exclusion;
+    flex: 1;
+    text-align: right;
+
+    &.center {
+      text-align: left;
+    }
+
+    &.no-mobile {
+      text-align: left;
+    }
+
+    &:hover {
+      color: map-get($colors, 'brand-dark-blue-hover');
+    }
+
+    &:active {
+      color: map-get($colors, 'brand-dark-blue-active');
+    }
+
+    &.disabled {
+      color: map-get($colors, 'brand-dark-blue');
+    }
   }
 
   &__container {
     position: sticky;
     top: 0;
-    // background-color: rgba(#fff, 1);
     z-index: 100;
-    // mix-blend-mode: color-dodge;
     mix-blend-mode: color-burn;
-    // mix-blend-mode: hard-light;
-    // mix-blend-mode: soft-light;
-    // mix-blend-mode: difference;
-    // mix-blend-mode: exclusion;
-    // mix-blend-mode: color;
-    // mix-blend-mode: luminosity;
   }
 }
 
@@ -105,8 +119,28 @@ body {
   }
 }
 
+.producthunt {
+  position: fixed;
+  bottom: 20px;
+  left: 30px;
+  z-index: 150;
+  display: none;
+}
+
 @media (min-width: 768px) {
   .no-mobile {
     display: initial;
+  }
+
+  .producthunt {
+    display: block;
+  }
+
+  .navigation {
+    a {
+      &.center {
+        text-align: center;
+      }
+    }
   }
 }

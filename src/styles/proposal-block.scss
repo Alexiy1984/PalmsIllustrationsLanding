@@ -1,3 +1,12 @@
+.proposal-block__container {
+  position: relative;
+}
+
+#proposal-block {
+  position: absolute;
+  top: -80px;
+}
+
 .proposal-block {
   display: flex;
   flex-wrap: wrap;
